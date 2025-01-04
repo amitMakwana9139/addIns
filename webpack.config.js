@@ -3,9 +3,11 @@
 const devCerts = require("office-addin-dev-certs");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://add-ins-git-main-amit-makwanas-projects-a43386ce.vercel.app/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 async function getHttpsOptions() {
   const httpsOptions = await devCerts.getHttpsServerOptions();
@@ -23,6 +25,8 @@ module.exports = async (env, options) => {
     },
     output: {
       clean: true,
+      path: path.resolve(__dirname, 'build'), // Specify the output directory
+      filename: '[name].[contenthash].js', // Use content hash for cache busting
     },
     resolve: {
       extensions: [".ts", ".html", ".js"],
