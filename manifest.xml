@@ -17,7 +17,8 @@
   </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
-    <SourceLocation DefaultValue="https://add-ins.vercel.app//taskpane.html"/>
+    <SourceLocation DefaultValue="https://add-ins.vercel.app/taskpane.html"/>
+    <Url id="ButtonId" DefaultValue="https://add-ins.vercel.app/taskpane.html" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
