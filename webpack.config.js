@@ -7,7 +7,7 @@ const path = require("path");
 
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://add-ins-git-main-amit-makwanas-projects-a43386ce.vercel.app/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://add-ins.vercel.app//"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 async function getHttpsOptions() {
   const httpsOptions = await devCerts.getHttpsServerOptions();
