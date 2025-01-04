@@ -24,7 +24,7 @@ module.exports = async (env, options) => {
       commands: "./src/commands/commands.ts",
     },
     output: {
-      clean: true,
+      // clean: true,
       path: path.resolve(__dirname, 'build'), // Specify the output directory
       filename: '[name].[contenthash].js', // Use content hash for cache busting
     },
