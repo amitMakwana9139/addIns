@@ -10,14 +10,15 @@
   <HighResolutionIconUrl DefaultValue="https://add-ins.vercel.app/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>https://add-ins.vercel.app</AppDomain> <!-- Updated to match Vercel deployment -->
+    <AppDomain>https://www.contoso.com</AppDomain> 
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://add-ins.vercel.app/"/> <!-- Ensure this points to your add-in root URL -->
-    <Url id="ButtonId" DefaultValue="https://add-ins.vercel.app/"/>
+    <!-- <SourceLocation DefaultValue="https://localhost:3000"/> -->
+    <SourceLocation DefaultValue="https://add-ins.vercel.app/"/>
+    <Url id="ButtonId" DefaultValue="https://add-ins.vercel.app/" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -51,7 +52,7 @@
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>ButtonId</TaskpaneId> <!-- Ensure this matches the ID used elsewhere -->
+                    <TaskpaneId>ButtonId1</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
