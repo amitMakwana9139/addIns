@@ -6,7 +6,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="my first addin"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://add-ins.vercel.app/assets/icon-32.png"/>
+  <IconUrl DefaultValue="https://www.contoso.com/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://add-ins.vercel.app/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
@@ -17,8 +17,8 @@
   </Hosts>
   <DefaultSettings>
     <!-- <SourceLocation DefaultValue="https://localhost:3000"/> -->
-    <SourceLocation DefaultValue="https://add-ins.vercel.app/"/>
-    <Url id="ButtonId" DefaultValue="https://add-ins.vercel.app/" />
+    <SourceLocation DefaultValue="https://add-ins.vercel.app"/>
+    <!-- <Url id="ButtonId" DefaultValue="https://add-ins.vercel.app" /> -->
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
